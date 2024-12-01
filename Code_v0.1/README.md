@@ -18,6 +18,12 @@ Ensure you have **Python 3.8+** installed. Use the following command to install 
 ## Running the Code
 The dataset preprocessing, training, and evaluation steps are integrated into a single script. To run the entire pipeline, use the following commands:
 
+### Step-by-Step Instructions
+1. Clone the repository: `git clone https://github.com/mehulgoenka/CSE6250_Project.git` and navigate to the directory: `cd Code_v0.1`.
+2. Install dependencies: `pip install -r requirements.txt`.
+3. Run the training pipeline: `python gat_transductive.py --dataset cora --epochs 1000`.
+4. Visualize results: Open the generated `.png` files in the project directory to view accuracy and loss trends.
+
 ### Training the Model
 To train the GAT model for a specific dataset, use:
 - For Cora: `python gat_transductive.py --dataset cora --epochs 1000 --lr 0.005`
@@ -40,13 +46,6 @@ The model evaluation happens automatically after training, and performance metri
 | `--alpha`        | 0.2     | Negative slope for LeakyReLU              |
 | `--patience`     | 100     | Early stopping patience                   |
 
-## How to Run the Project
-
-### Step-by-Step Instructions
-1. Clone the repository: `git clone https://github.com/mehulgoenka/CSE6250_Project.git` and navigate to the directory: `cd Code_v0.1`.
-2. Install dependencies: `pip install -r requirements.txt`.
-3. Run the training pipeline: `python gat_transductive.py --dataset cora --epochs 1000`.
-4. Visualize results: Open the generated `.png` files in the project directory to view accuracy and loss trends.
 
 ## Notes
 Ensure you have `matplotlib` installed for generating plots. Results may vary slightly based on random initialization and hardware configuration.
