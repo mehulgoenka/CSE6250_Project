@@ -43,7 +43,7 @@ The model evaluation happens automatically after training, and performance metri
 ## How to Run the Project
 
 ### Step-by-Step Instructions
-1. Clone the repository: `git clone https://github.com/mehulgoenka/CSE6250_Project.git` and navigate to the directory: `cd CCode_v0.1`.
+1. Clone the repository: `git clone https://github.com/mehulgoenka/CSE6250_Project.git` and navigate to the directory: `cd Code_v0.1`.
 2. Install dependencies: `pip install -r requirements.txt`.
 3. Run the training pipeline: `python gat_transductive.py --dataset cora --epochs 1000`.
 4. Visualize results: Open the generated `.png` files in the project directory to view accuracy and loss trends.
