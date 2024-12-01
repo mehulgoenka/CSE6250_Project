@@ -40,24 +40,10 @@ The model evaluation happens automatically after training, and performance metri
 | `--alpha`        | 0.2     | Negative slope for LeakyReLU              |
 | `--patience`     | 100     | Early stopping patience                   |
 
-## Results
-### Generated Outputs
-After training and evaluation, the following files will be created:
-- **Accuracy Plots**: `accuracy_plot_{dataset}.png`
-- **Loss Plots**: `loss_plot_{dataset}.png`
-- **Trained Model Weights**: `best_model_{dataset}.pth`
-
-### Reproduced Results
-The results for the Cora dataset are as follows:
-- **Training Accuracy**: 81.43%
-- **Validation Accuracy**: 82.29%
-- **Test Accuracy**: 78.67%
-
-Plots for other datasets (Citeseer and Pubmed) can be generated using the same workflow.
-
 ## How to Run the Project
+
 ### Step-by-Step Instructions
-1. Clone the repository: `git clone https://github.com/mehulgoenka/CSE6250_Project.git` and navigate to the directory: `cd CSE6250_Project`.
+1. Clone the repository: `git clone https://github.com/mehulgoenka/CSE6250_Project.git` and navigate to the directory: `cd Code_v0.1`.
 2. Install dependencies: `pip install -r requirements.txt`.
 3. Run the training pipeline: `python gat_transductive.py --dataset cora --epochs 1000`.
 4. Visualize results: Open the generated `.png` files in the project directory to view accuracy and loss trends.
